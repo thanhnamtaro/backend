@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+
+<!--Head Start-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Title-->
+    <title>4.0 LAND | Trang web đăng tin bất động sản online</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="asset/page_images/favicon.png">
+
+    <!--Import Css-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/easydropdown.css" />
+    <link rel="stylesheet" type="text/css" href="css/hamburgers.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/custom.css" />
+
+    <!--Import Font-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<!--Head End-->
+
+<!--Body Start-->
+<body class="body">
+<!--Header Start-->
+<header class="header-area">
+    <div class="container-fluid header-top">
+        <div class="d-xl-flex d-lg-flex d-md-flex d-sm-flex ">
+            <div class="item mail">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:abc@ed.com">contactus@gmail.com</a>
+            </div>
+
+            <div class="item phone">
+                <i class="fas fa-phone-square"></i>
+                <a href="tel:123456">0909.090.999</a>
+            </div>
+
+            <div class="item social-media">
+                <span href="#">Follow us on </span>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class="item sign-up-in">
+                <div class="d-xl-flex d-lg-flex d-md-flex d-sm-flex center">
+                    <div class="pr-2">
+                        <div style="position: relative;">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <a href="javascript:void(0);" id="show-login-form">Đăng Nhập</a>
+                            <div class="form-login pt-4">
+                                <form action="#" method="post" id="login-form">
+                                    <div>
+                                        <h6 class="login-infor">TÀI KHOẢN</h6>
+                                        <input type="input" class="form-control" name="username" placeholder="Username/Email">
+                                        <h6 class="login-infor">MẬT KHẨU</h6>
+                                        <input type="password" class="form-control" name="username" placeholder="Password">
+                                        <button class="subcribe-btn-animation" style="background: #ff3c52">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="form-signup pt-4">
+                                <form action="#" method="post" id="signup-form">
+                                    <div>
+                                        <h6 class="login-infor">USERNAME</h6>
+                                        <input type="input" class="form-control" name="username" placeholder="Username">
+                                        <h6 class="login-infor">EMAIL</h6>
+                                        <input type="input" class="form-control" name="email" placeholder="Email">
+                                        <h6 class="login-infor">MẬT KHẨU</h6>
+                                        <input type="password" class="form-control" name="username" placeholder="Password">
+                                        <h6 class="login-infor">NHẬP LẠI MẬT KHẨU</h6>
+                                        <input type="password" class="form-control" name="username" placeholder="Password">
+                                        <button class="subcribe-btn-animation" style="background: #ff3d3c">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="pl-2">
+                        <i class="fas fa-user-plus"></i>
+                        <a href="javascript:void(0)" id="show-signup-form">Đăng Kí</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid header-menu">
+        <div class="d-flex justify-content-xl-center justify-content-lg-center justify-content-md-between justify-content-sm-between center-logo">
+            <div class="logo">
+                <a href=""><img src="asset/page_images/logo.png" class="logo"> </a>
+            </div>
+            <div class="d-xl-flex d-lg-flex d-md-flex d-sm-flex center align-items-center pt-3">
+                <div class="item-menu">
+                    <a  href="#">Trang Chủ</a>
+                </div>
+                <div class="item-menu">
+                    <a href="#">Nhà Đất Bán</a>
+                    <ul class="sub-menu animated jackInTheBox">
+                        <li><a href="">Căn Hộ Chung Cư</a></li>
+                        <li><a href="">Nhà Riêng</a></li>
+                        <li><a href="">Nhà Biệt Thự</a></li>
+                        <li><a href="">Đất Nền Dự Án</a></li>
+                        <li><a href="">Đất Thổ Cư</a></li>
+                        <li><a href="">Đất Vườn</a></li>
+                        <li><a href="">Cửa Hàng Kho Xưởng</a></li>
+                    </ul>
+                </div>
+                <div class="item-menu">
+                    <a href="#">Nhà Đất Cho Thuê</a>
+                    <ul class="sub-menu animated jackInTheBox">
+                        <li><a href="">Căn Hộ Chung Cư</a></li>
+                        <li><a href="">Nhà Riêng</a></li>
+                        <li><a href="">Nhà Biệt Thự</a></li>
+                        <li><a href="">Phòng Trọ</a></li>
+                        <li><a href="">Văn Phòng</a></li>
+                        <li><a href="">Mặt Bằng Kinh Doanh</a></li>
+                        <li><a href="">Cửa Hàng Kho Xưởng</a></li>
+                    </ul>
+                </div>
+                <div class="item-menu">
+                    <a href="#">Dự Án</a>
+                    <ul class="sub-menu animated jackInTheBox">
+                        <li><a href="">Căn Hộ Chung Cư</a></li>
+                        <li><a href="">Cao Ốc Văn Phòng</a></li>
+                        <li><a href="">Trung Tâm Thương Mại</a></li>
+                        <li><a href="">Khu Đô Thị Mới</a></li>
+                        <li><a href="">Biệt Thự Liền Kề</a></li>
+                        <li><a href="">Khu Công Nghiệp</a></li>
+                        <li><a href="">Nhà Ở Xã Hội</a></li>
+                    </ul>
+                </div>
+                <div class="item-menu">
+                    <a href="#">Cần Mua | Cần Thuê</a>
+                </div>
+                <div class="item-menu">
+                    <a href="#">Tin Tức</a>
+                </div>
+                <div class="item-menu">
+                    <a href="#">Hỗ Trợ</a>
+                </div>
+            </div>
+            <div class="item-menu-custom hamburger hamburger--squeeze" id="show-menu-mobile" style="padding-top: 100px">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row p-2">
+            <div class="menu-mobile">
+                <nav class="main-menu-area">
+                    <ul class="main-menu-mobile">
+                        <li class="item-menu-mobile"><a href="">Trang Chủ</a></li>
+                        <li class="item-menu-mobile">
+                            <a href="">Nhà Đất Bán</a>
+                            <ul class="sub-menu-mobile">
+                                <li><a href="">Căn Hộ Chung Cư</a></li>
+                                <li><a href="">Nhà Riêng</a></li>
+                                <li><a href="">Nhà Biệt Thự</a></li>
+                                <li><a href="">Đất Nền Dự Án</a></li>
+                                <li><a href="">Đất Thổ Cư</a></li>
+                                <li><a href="">Đất Vườn</a></li>
+                                <li><a href="">Cửa Hàng Kho Xưởng</a></li>
+                            </ul>
+                            <i class="arrow-main-menu fas fa-caret-right"></i>
+                        </li>
+                        <li class="item-menu-mobile">
+                            <a href="">Nhà Đất Cho Thuê</a>
+                            <ul class="sub-menu-mobile">
+                                <li><a href="">Căn Hộ Chung Cư</a></li>
+                                <li><a href="">Nhà Riêng</a></li>
+                                <li><a href="">Nhà Biệt Thự</a></li>
+                                <li><a href="">Phòng Trọ</a></li>
+                                <li><a href="">Văn Phòng</a></li>
+                                <li><a href="">Mặt Bằng Kinh Doanh</a></li>
+                                <li><a href="">Cửa Hàng Kho Xưởng</a></li>
+                            </ul>
+                            <i class="arrow-main-menu fas fa-caret-right"></i>
+                        </li>
+                        <li class="item-menu-mobile">
+                            <a href="">Dự Án</a>
+                            <ul class="sub-menu-mobile">
+                                <li><a href="">Căn Hộ Chung Cư</a></li>
+                                <li><a href="">Cao Ốc Văn Phòng</a></li>
+                                <li><a href="">Trung Tâm Thương Mại</a></li>
+                                <li><a href="">Khu Đô Thị Mới</a></li>
+                                <li><a href="">Biệt Thự Liền Kề</a></li>
+                                <li><a href="">Khu Công Nghiệp</a></li>
+                                <li><a href="">Nhà Ở Xã Hội</a></li>
+                            </ul>
+                            <i class="arrow-main-menu fas fa-caret-right"></i>
+                        </li>
+                        <li class="item-menu-mobile"><a href="">Cần Mua | Cần Thuê</a></li>
+                        <li class="item-menu-mobile"><a href="">Tin Tức</a></li>
+                        <li class="item-menu-mobile"><a href="">Hỗ Trợ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header End-->
+
+<!--Section Start-->
+<section class="container p-2">
+    <div class="d-flex">
+        <div class="search-box">
+            <span><a href="javascript:void(0);" id="show-advance-search">TÌM KIẾM <i class="fas fa-search-location"></i></a></span>
+        </div>
+        <div class="search-box">
+            <span><a href="#">ĐĂNG TIN <i class="fas fa-plus-circle"></i></a></span>
+        </div>
+    </div>
+
+    <div class="row p-2 advance-search">
+        <div class="container">
+            <form action="#" method="post" id="advance-search-form">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <input type="input" class="form-control" name="city" placeholder="Tỉnh/Thành Phố">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <input type="input" class="form-control" name="district" placeholder="Quận/Huyện">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <input type="input" class="form-control" name="ward" placeholder="Phường/Xã">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <input type="input" class="form-control" name="town" placeholder="Khu Phố/Ấp">
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <select class="form-control" id="category-kind">
+                                <option >Nhu Cầu</option>
+                                <option >Nhà Đất Bán</option>
+                                <option >Nhà Đất Cho Thuê</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <select class="form-control" id="category-type">
+                                <option value="all">Loại Hình</option>
+                                <option value="canhochungcu">Căn Hộ Chung Cư</option>
+                                <option>Nhà Biệt Thự</option>
+                                <option>Cửa Hàng Kho Xưởng</option>
+                                <option>Đất Nền Dự Án</option>
+                                <option>Đất Thổ Cư</option>
+                                <option>Đất Vườn</option>
+                                <option>Phòng Trọ</option>
+                                <option>Văn Phòng</option>
+                                <option>Mặt Bằng Kinh Doanh</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <select class="form-control" id="price">
+                                <option>Mức Giá (VNĐ)</option>
+                                <option>0 - 20 Triệu</option>
+                                <option>20 Triệu - 50 Triệu</option>
+                                <option>50 Triệu - 100 Triệu</option>
+                                <option>100 Triệu - 300 Triệu</option>
+                                <option>300 Triệu - 500 Triệu</option>
+                                <option>500 Triệu - 1 Tỷ</option>
+                                <option>1 Tỷ - 5 Tỷ</option>
+                                <option>5 Tỷ - 10 Tỷ</option>
+                                <option>Trên 10 Tỷ</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <select class="form-control" id="square">
+                                <option>Diện Tích (m<sup>2</sup>)</option>
+                                <option>0 - 100</option>
+                                <option>100 - 200</option>
+                                <option>200 - 400</option>
+                                <option>400 - 700</option>
+                                <option>700 - 1000</option>
+                                <option>1000 - 3000</option>
+                                <option>3000 - 5000</option>
+                                <option>5000 - 10000</option>
+                                <option>Trên 10000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group submit-btn">
+                            <button type="submit" class="subcribe-btn-animation">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!--Section End-->
+
+<!--Section Start-->
+<section class="container-fluid">
+    <div class="row pt-4">
+        <div class="col-12 links-hov" style="text-align: center">
+            <a href="" class="links">Trang Chủ</a>
+            <span>/</span>
+            <a class="links" href="">Nhà Đất Bán</a>
+            <span>/</span>
+            <a class="links" href="">Căn Hộ Chung Cư</a>
+        </div>
+    </div>
+    <div class="real-estate-project">
+        <h1 class="title animated fadeInDown">CĂN HỘ CHUNG CƯ</h1>
+        <hr class="animated fadeInRight" width="450px" color="red">
+    </div>
+    <div class="filter-option">
+        <div class="row p-2">
+            <div class="container">
+                <form action="#" method="post" id="filter-form">
+                    <div class="row p-2">
+                        <div class="col-lg-3 col-md-6 col-sm-6" style="text-align: center">
+                            <h4>Số Phòng Ngủ</h4>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="bedroom" value="1"> 1 Phòng Ngủ
+                            </div>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="bedroom" value="2"> 2 Phòng Ngủ
+                            </div>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="bedroom" value="3"> 3 Phòng Ngủ
+                            </div>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="bedroom" value="4"> 4 Phòng Ngủ
+                            </div>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="bedroom" value="4"> 5 Phòng Ngủ
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6" style="text-align: center">
+                            <h4>Số Nhà Vệ Sinh</h4>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="bathroom" value="1"> 1 WC
+                            </div>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="bathroom" value="2"> 2 WC
+                            </div>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="bathroom" value="3"> 3 WC
+                            </div>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="bathroom" value="4"> 4 WC
+                            </div>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="bathroom" value="5"> 5 WC
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6" style="text-align: center">
+                            <h4>Diện Tích</h4>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="square" value="1"> 0 - 50m<sup>2</sup>
+                            </div>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="square" value="2"> 50m<sup>2</sup> - 100m<sup>2</sup>
+                            </div>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="square" value="3"> 100m<sup>2</sup> - 150m<sup>2</sup>
+                            </div>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="square" value="4"> 150m<sup>2</sup> - 200m<sup>2</sup>
+                            </div>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="square" value="5"> Trên 200m<sup>2</sup>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6" style="text-align: center">
+                            <h4>Mức Giá</h4>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="bathroom" value="1"> 0 - 500 Triệu
+                            </div>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="bathroom" value="2"> 500 - 1 Tỷ
+                            </div>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="bathroom" value="3"> 1 Tỷ - 3 Tỷ
+                            </div>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="bathroom" value="4"> 3 Tỷ - 5 Tỷ
+                            </div>
+                            <div class="check-box-filter">
+                                <input type="checkbox" name="bathroom" value="5"> Trên 5 Tỷ
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="real-estate-project">
+                    <hr class="animated fadeInRight" width="1000px" color="red">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item-container-new">
+        <div class="row">
+            <div class="new-item p-4">
+                <img src="asset/page_images/thumb-item-7.jpg" class="img-fluid animated zoomIn">
+                <a href="#"><h5>Chung Cư 3/2</h5></a>
+                <div class="new-thumb-detail animated fadeInLeft">
+                    <div class="owner-new"><h6><i class="fas fa-users"></i> Liên Hệ: Nguyễn Văn A</h6></div>
+                    <div class="kind-new"><h6><i class="fas fa-building"></i> Loại Hình: Chung Cư</h6></div>
+                    <div class="location-new"><h6><i class="fas fa-map-marker-alt"></i> Vị Trí: 30 Lê Lợi, P. Bến Nghé,
+                        Quận 1</h6></div>
+                    <div class="square-new"><h6><i class="fas fa-map-signs"></i> Diện Tích: 100m<sup>2</sup></h6></div>
+                    <div class="description-new"><h6><i class="fas fa-bed"></i> Mô Tả: 3 Phòng Ngủ/2 WC/ 1 Trệt 1 Lầu
+                    </h6></div>
+                    <div class="money-new"><h6><i class="fas fa-dollar-sign"></i> Mức Giá: 1 Tỷ VNĐ</h6></div>
+                </div>
+            </div>
+            <div class="new-item p-4">
+                <img src="asset/page_images/thumb-item-6.jpg" class="img-fluid animated zoomIn">
+                <a href="#"><h5>Chung Cư Lê Duẩn</h5></a>
+                <div class="new-thumb-detail animated fadeInLeft">
+                    <div class="owner-new"><h6><i class="fas fa-users"></i> Liên Hệ: Nguyễn Văn A</h6></div>
+                    <div class="kind-new"><h6><i class="fas fa-building"></i> Loại Hình: Chung Cư</h6></div>
+                    <div class="location-new"><h6><i class="fas fa-map-marker-alt"></i> Vị Trí: 30 Lê Lợi, P. Bến Nghé,
+                        Quận 1</h6></div>
+                    <div class="square-new"><h6><i class="fas fa-map-signs"></i> Diện Tích: 100m<sup>2</sup></h6></div>
+                    <div class="description-new"><h6><i class="fas fa-bed"></i> Mô Tả: 3 Phòng Ngủ/2 WC/ 1 Trệt 1 Lầu
+                    </h6></div>
+                    <div class="money-new"><h6><i class="fas fa-dollar-sign"></i> Mức Giá: 1 Tỷ VNĐ</h6></div>
+                </div>
+            </div>
+            <div class="new-item p-4">
+                <img src="asset/page_images/thumb-item-5.jpg" class="img-fluid animated zoomIn">
+                <a href="#"><h5>Chung Cư Lê Thánh Tông</h5></a>
+                <div class="new-thumb-detail animated fadeInLeft">
+                    <div class="owner-new"><h6><i class="fas fa-users"></i> Liên Hệ: Nguyễn Văn A</h6></div>
+                    <div class="kind-new"><h6><i class="fas fa-building"></i> Loại Hình: Chung Cư</h6></div>
+                    <div class="location-new"><h6><i class="fas fa-map-marker-alt"></i> Vị Trí: 30 Lê Lợi, P. Bến Nghé,
+                        Quận 1</h6></div>
+                    <div class="square-new"><h6><i class="fas fa-map-signs"></i> Diện Tích: 100m<sup>2</sup></h6></div>
+                    <div class="description-new"><h6><i class="fas fa-bed"></i> Mô Tả: 3 Phòng Ngủ/2 WC/ 1 Trệt 1 Lầu
+                    </h6></div>
+                    <div class="money-new"><h6><i class="fas fa-dollar-sign"></i> Mức Giá: 1 Tỷ VNĐ</h6></div>
+                </div>
+            </div>
+            <div class="new-item p-4">
+                <img src="asset/page_images/thumb-item-4.jpg" class="img-fluid animated zoomIn">
+                <a href="#"><h5>Chung Cư Donald Trump</h5></a>
+                <div class="new-thumb-detail animated fadeInLeft">
+                    <div class="owner-new"><h6><i class="fas fa-users"></i> Liên Hệ: Nguyễn Văn A</h6></div>
+                    <div class="kind-new"><h6><i class="fas fa-building"></i> Loại Hình: Chung Cư</h6></div>
+                    <div class="location-new"><h6><i class="fas fa-map-marker-alt"></i> Vị Trí: 30 Lê Lợi, P. Bến Nghé,
+                        Quận 1</h6></div>
+                    <div class="square-new"><h6><i class="fas fa-map-signs"></i> Diện Tích: 100m<sup>2</sup></h6></div>
+                    <div class="description-new"><h6><i class="fas fa-bed"></i> Mô Tả: 3 Phòng Ngủ/2 WC/ 1 Trệt 1 Lầu
+                    </h6></div>
+                    <div class="money-new"><h6><i class="fas fa-dollar-sign"></i> Mức Giá: 1 Tỷ VNĐ</h6></div>
+                </div>
+            </div>
+            <div class="new-item p-4">
+                <img src="asset/page_images/thumb-item-3.jpg" class="img-fluid animated zoomIn">
+                <a href="#"><h5>Chung Cư HNT Group</h5></a>
+                <div class="new-thumb-detail animated fadeInLeft">
+                    <div class="owner-new"><h6><i class="fas fa-users"></i> Liên Hệ: Nguyễn Văn A</h6></div>
+                    <div class="kind-new"><h6><i class="fas fa-building"></i> Loại Hình: Chung Cư</h6></div>
+                    <div class="location-new"><h6><i class="fas fa-map-marker-alt"></i> Vị Trí: 30 Lê Lợi, P. Bến Nghé,
+                        Quận 1</h6></div>
+                    <div class="square-new"><h6><i class="fas fa-map-signs"></i> Diện Tích: 100m<sup>2</sup></h6></div>
+                    <div class="description-new"><h6><i class="fas fa-bed"></i> Mô Tả: 3 Phòng Ngủ/2 WC/ 1 Trệt 1 Lầu
+                    </h6></div>
+                    <div class="money-new"><h6><i class="fas fa-dollar-sign"></i> Mức Giá: 1 Tỷ VNĐ</h6></div>
+                </div>
+            </div>
+            <div class="new-item p-4">
+                <img src="asset/page_images/thumb-item-2.jpg" class="img-fluid animated zoomIn">
+                <a href="#"><h5>Chung Cư Hùng Vương</h5></a>
+                <div class="new-thumb-detail animated fadeInLeft">
+                    <div class="owner-new"><h6><i class="fas fa-users"></i> Liên Hệ: Nguyễn Văn A</h6></div>
+                    <div class="kind-new"><h6><i class="fas fa-building"></i> Loại Hình: Chung Cư</h6></div>
+                    <div class="location-new"><h6><i class="fas fa-map-marker-alt"></i> Vị Trí: 30 Lê Lợi, P. Bến Nghé,
+                        Quận 1</h6></div>
+                    <div class="square-new"><h6><i class="fas fa-map-signs"></i> Diện Tích: 100m<sup>2</sup></h6></div>
+                    <div class="description-new"><h6><i class="fas fa-bed"></i> Mô Tả: 3 Phòng Ngủ/2 WC/ 1 Trệt 1 Lầu
+                    </h6></div>
+                    <div class="money-new"><h6><i class="fas fa-dollar-sign"></i> Mức Giá: 1 Tỷ VNĐ</h6></div>
+                </div>
+            </div>
+            <div class="new-item p-4">
+                <img src="asset/page_images/thumb-item-1.jpg" class="img-fluid animated zoomIn">
+                <a href="#"><h5>Chung Cư VTV3</h5></a>
+                <div class="new-thumb-detail animated fadeInLeft">
+                    <div class="owner-new"><h6><i class="fas fa-users"></i> Liên Hệ: Nguyễn Văn A</h6></div>
+                    <div class="kind-new"><h6><i class="fas fa-building"></i> Loại Hình: Chung Cư</h6></div>
+                    <div class="location-new"><h6><i class="fas fa-map-marker-alt"></i> Vị Trí: 30 Lê Lợi, P. Bến Nghé,
+                        Quận 1</h6></div>
+                    <div class="square-new"><h6><i class="fas fa-map-signs"></i> Diện Tích: 100m<sup>2</sup></h6></div>
+                    <div class="description-new"><h6><i class="fas fa-bed"></i> Mô Tả: 3 Phòng Ngủ/2 WC/ 1 Trệt 1 Lầu
+                    </h6></div>
+                    <div class="money-new"><h6><i class="fas fa-dollar-sign"></i> Mức Giá: 1 Tỷ VNĐ</h6></div>
+                </div>
+            </div>
+            <div class="new-item p-4">
+                <img src="asset/page_images/thumb-item-8.jpg" class="img-fluid animated zoomIn">
+                <a href="#"><h5>Chung Cư HTML</h5></a>
+                <div class="new-thumb-detail animated fadeInLeft">
+                    <div class="owner-new"><h6><i class="fas fa-users"></i> Liên Hệ: Nguyễn Văn A</h6></div>
+                    <div class="kind-new"><h6><i class="fas fa-building"></i> Loại Hình: Chung Cư</h6></div>
+                    <div class="location-new"><h6><i class="fas fa-map-marker-alt"></i> Vị Trí: 30 Lê Lợi, P. Bến Nghé,
+                        Quận 1</h6></div>
+                    <div class="square-new"><h6><i class="fas fa-map-signs"></i> Diện Tích: 100m<sup>2</sup></h6></div>
+                    <div class="description-new"><h6><i class="fas fa-bed"></i> Mô Tả: 3 Phòng Ngủ/2 WC/ 1 Trệt 1 Lầu
+                    </h6></div>
+                    <div class="money-new"><h6><i class="fas fa-dollar-sign"></i> Mức Giá: 1 Tỷ VNĐ</h6></div>
+                </div>
+            </div>
+            <div class="new-item p-4">
+                <img src="asset/page_images/thumb-item-7.jpg" class="img-fluid animated zoomIn">
+                <a href="#"><h5>Chung Cư 3/2</h5></a>
+                <div class="new-thumb-detail animated fadeInLeft">
+                    <div class="owner-new"><h6><i class="fas fa-users"></i> Liên Hệ: Nguyễn Văn A</h6></div>
+                    <div class="kind-new"><h6><i class="fas fa-building"></i> Loại Hình: Chung Cư</h6></div>
+                    <div class="location-new"><h6><i class="fas fa-map-marker-alt"></i> Vị Trí: 30 Lê Lợi, P. Bến Nghé,
+                        Quận 1</h6></div>
+                    <div class="square-new"><h6><i class="fas fa-map-signs"></i> Diện Tích: 100m<sup>2</sup></h6></div>
+                    <div class="description-new"><h6><i class="fas fa-bed"></i> Mô Tả: 3 Phòng Ngủ/2 WC/ 1 Trệt 1 Lầu
+                    </h6></div>
+                    <div class="money-new"><h6><i class="fas fa-dollar-sign"></i> Mức Giá: 1 Tỷ VNĐ</h6></div>
+                </div>
+            </div>
+            <div class="new-item p-4">
+                <img src="asset/page_images/thumb-item-6.jpg" class="img-fluid animated zoomIn">
+                <a href="#"><h5>Chung Cư Lê Duẩn</h5></a>
+                <div class="new-thumb-detail animated fadeInLeft">
+                    <div class="owner-new"><h6><i class="fas fa-users"></i> Liên Hệ: Nguyễn Văn A</h6></div>
+                    <div class="kind-new"><h6><i class="fas fa-building"></i> Loại Hình: Chung Cư</h6></div>
+                    <div class="location-new"><h6><i class="fas fa-map-marker-alt"></i> Vị Trí: 30 Lê Lợi, P. Bến Nghé,
+                        Quận 1</h6></div>
+                    <div class="square-new"><h6><i class="fas fa-map-signs"></i> Diện Tích: 100m<sup>2</sup></h6></div>
+                    <div class="description-new"><h6><i class="fas fa-bed"></i> Mô Tả: 3 Phòng Ngủ/2 WC/ 1 Trệt 1 Lầu
+                    </h6></div>
+                    <div class="money-new"><h6><i class="fas fa-dollar-sign"></i> Mức Giá: 1 Tỷ VNĐ</h6></div>
+                </div>
+            </div>
+            <div class="new-item p-4">
+                <img src="asset/page_images/thumb-item-5.jpg" class="img-fluid animated zoomIn">
+                <a href="#"><h5>Chung Cư Lê Thánh Tông</h5></a>
+                <div class="new-thumb-detail animated fadeInLeft">
+                    <div class="owner-new"><h6><i class="fas fa-users"></i> Liên Hệ: Nguyễn Văn A</h6></div>
+                    <div class="kind-new"><h6><i class="fas fa-building"></i> Loại Hình: Chung Cư</h6></div>
+                    <div class="location-new"><h6><i class="fas fa-map-marker-alt"></i> Vị Trí: 30 Lê Lợi, P. Bến Nghé,
+                        Quận 1</h6></div>
+                    <div class="square-new"><h6><i class="fas fa-map-signs"></i> Diện Tích: 100m<sup>2</sup></h6></div>
+                    <div class="description-new"><h6><i class="fas fa-bed"></i> Mô Tả: 3 Phòng Ngủ/2 WC/ 1 Trệt 1 Lầu
+                    </h6></div>
+                    <div class="money-new"><h6><i class="fas fa-dollar-sign"></i> Mức Giá: 1 Tỷ VNĐ</h6></div>
+                </div>
+            </div>
+            <div class="new-item p-4">
+                <img src="asset/page_images/thumb-item-4.jpg" class="img-fluid animated zoomIn">
+                <a href="#"><h5>Chung Cư Donald Trump</h5></a>
+                <div class="new-thumb-detail animated fadeInLeft">
+                    <div class="owner-new"><h6><i class="fas fa-users"></i> Liên Hệ: Nguyễn Văn A</h6></div>
+                    <div class="kind-new"><h6><i class="fas fa-building"></i> Loại Hình: Chung Cư</h6></div>
+                    <div class="location-new"><h6><i class="fas fa-map-marker-alt"></i> Vị Trí: 30 Lê Lợi, P. Bến Nghé,
+                        Quận 1</h6></div>
+                    <div class="square-new"><h6><i class="fas fa-map-signs"></i> Diện Tích: 100m<sup>2</sup></h6></div>
+                    <div class="description-new"><h6><i class="fas fa-bed"></i> Mô Tả: 3 Phòng Ngủ/2 WC/ 1 Trệt 1 Lầu
+                    </h6></div>
+                    <div class="money-new"><h6><i class="fas fa-dollar-sign"></i> Mức Giá: 1 Tỷ VNĐ</h6></div>
+                </div>
+            </div>
+            <div class="new-item p-4">
+                <img src="asset/page_images/thumb-item-3.jpg" class="img-fluid animated zoomIn">
+                <a href="#"><h5>Chung Cư HNT Group</h5></a>
+                <div class="new-thumb-detail animated fadeInLeft">
+                    <div class="owner-new"><h6><i class="fas fa-users"></i> Liên Hệ: Nguyễn Văn A</h6></div>
+                    <div class="kind-new"><h6><i class="fas fa-building"></i> Loại Hình: Chung Cư</h6></div>
+                    <div class="location-new"><h6><i class="fas fa-map-marker-alt"></i> Vị Trí: 30 Lê Lợi, P. Bến Nghé,
+                        Quận 1</h6></div>
+                    <div class="square-new"><h6><i class="fas fa-map-signs"></i> Diện Tích: 100m<sup>2</sup></h6></div>
+                    <div class="description-new"><h6><i class="fas fa-bed"></i> Mô Tả: 3 Phòng Ngủ/2 WC/ 1 Trệt 1 Lầu
+                    </h6></div>
+                    <div class="money-new"><h6><i class="fas fa-dollar-sign"></i> Mức Giá: 1 Tỷ VNĐ</h6></div>
+                </div>
+            </div>
+            <div class="new-item p-4">
+                <img src="asset/page_images/thumb-item-2.jpg" class="img-fluid animated zoomIn">
+                <a href="#"><h5>Chung Cư Hùng Vương</h5></a>
+                <div class="new-thumb-detail animated fadeInLeft">
+                    <div class="owner-new"><h6><i class="fas fa-users"></i> Liên Hệ: Nguyễn Văn A</h6></div>
+                    <div class="kind-new"><h6><i class="fas fa-building"></i> Loại Hình: Chung Cư</h6></div>
+                    <div class="location-new"><h6><i class="fas fa-map-marker-alt"></i> Vị Trí: 30 Lê Lợi, P. Bến Nghé,
+                        Quận 1</h6></div>
+                    <div class="square-new"><h6><i class="fas fa-map-signs"></i> Diện Tích: 100m<sup>2</sup></h6></div>
+                    <div class="description-new"><h6><i class="fas fa-bed"></i> Mô Tả: 3 Phòng Ngủ/2 WC/ 1 Trệt 1 Lầu
+                    </h6></div>
+                    <div class="money-new"><h6><i class="fas fa-dollar-sign"></i> Mức Giá: 1 Tỷ VNĐ</h6></div>
+                </div>
+            </div>
+            <div class="new-item p-4">
+                <img src="asset/page_images/thumb-item-1.jpg" class="img-fluid animated zoomIn">
+                <a href="#"><h5>Chung Cư VTV3</h5></a>
+                <div class="new-thumb-detail animated fadeInLeft">
+                    <div class="owner-new"><h6><i class="fas fa-users"></i> Liên Hệ: Nguyễn Văn A</h6></div>
+                    <div class="kind-new"><h6><i class="fas fa-building"></i> Loại Hình: Chung Cư</h6></div>
+                    <div class="location-new"><h6><i class="fas fa-map-marker-alt"></i> Vị Trí: 30 Lê Lợi, P. Bến Nghé,
+                        Quận 1</h6></div>
+                    <div class="square-new"><h6><i class="fas fa-map-signs"></i> Diện Tích: 100m<sup>2</sup></h6></div>
+                    <div class="description-new"><h6><i class="fas fa-bed"></i> Mô Tả: 3 Phòng Ngủ/2 WC/ 1 Trệt 1 Lầu
+                    </h6></div>
+                    <div class="money-new"><h6><i class="fas fa-dollar-sign"></i> Mức Giá: 1 Tỷ VNĐ</h6></div>
+                </div>
+            </div>
+            <div class="new-item p-4">
+                <img src="asset/page_images/thumb-item-8.jpg" class="img-fluid animated zoomIn">
+                <a href="#"><h5>Chung Cư HTML</h5></a>
+                <div class="new-thumb-detail animated fadeInLeft">
+                    <div class="owner-new"><h6><i class="fas fa-users"></i> Liên Hệ: Nguyễn Văn A</h6></div>
+                    <div class="kind-new"><h6><i class="fas fa-building"></i> Loại Hình: Chung Cư</h6></div>
+                    <div class="location-new"><h6><i class="fas fa-map-marker-alt"></i> Vị Trí: 30 Lê Lợi, P. Bến Nghé,
+                        Quận 1</h6></div>
+                    <div class="square-new"><h6><i class="fas fa-map-signs"></i> Diện Tích: 100m<sup>2</sup></h6></div>
+                    <div class="description-new"><h6><i class="fas fa-bed"></i> Mô Tả: 3 Phòng Ngủ/2 WC/ 1 Trệt 1 Lầu
+                    </h6></div>
+                    <div class="money-new"><h6><i class="fas fa-dollar-sign"></i> Mức Giá: 1 Tỷ VNĐ</h6></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section End-->
+
+
+
+<!--Section Test-->
+<section>
+</section>
+<!--Section Test End-->
+
+<footer class="footer-area">
+    <div class="content-footer">
+        <div class="contact-infor">
+            <h4 class="title-contact-infor">THÔNG TIN LIÊN HỆ</h4>
+            <div>
+                <p class="detail-contact-infor">Mọi vấn đề thắc mắc hay cần hỗ trợ vui lòng liên hệ SĐT 0399294265. Hoặc hẹn trực tiếp tại D6 KTX Khu B - Đông Hòa - Dĩ An - Bình Dương.</p>
+                <p class="detail-contact-infor">Email: contactus@gmail.com</p>
+                <div class="social-fanpage">
+                    <a class="social-icon" href="#"><i class="fab fa-facebook"></i></a>
+                    <a class="social-icon" href="#"><i class="fab fa-youtube-square"></i></a>
+                    <a class="social-icon" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="newletter">
+            <h4 class="title-contact-infor">EMAIL THÔNG BÁO</h4>
+            <form>
+                <div class="input-newletter">
+                    <input class="input-type" type="text" name="email" placeholder="Nhập Email Để Nhận Tin">
+                </div>
+                <div class="subcribe-btn">
+                    <button class="subcribe-btn-animation" style="width: 300px">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">
+        Copyright © 2018 All rights reserved. | This template is made with <i class="fas fa-heartbeat" aria-hidden="true"></i> by HNT
+    </div>
+</footer>
+
+<!--Button Back To Top-->
+<div class="btn-back-to-top " id="idBtnBack">
+        <span class="symbol">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </span>
+</div>
+
+<!--Import JS-->
+<script src="js/jQuery/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/jquery.easydropdown.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+<!--Body End-->
+</html>

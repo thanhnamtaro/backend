@@ -1,0 +1,113 @@
+{{#if user}}
+<section class="container-fluid">
+    <div class="row pt-4">
+        <div class="col-12 links-hov" style="text-align: center">
+            <a href="" class="links">Trang Chủ</a>
+            <span>/</span>
+            <a id= "demo1" class="links" onclick="myFunction()">Thông Tin Người Dùng</a>
+<!--             <p id="demo"> {{user.name}}</p> -->
+        </div>
+    </div>
+    <div class="real-estate-project">
+        <h1 class="title animated fadeInDown">Thông Tin Người Dùng</h1>
+        <hr class="animated fadeInRight" width="450px" color="red">
+    </div>
+    <div class="item-container-new">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="new-item pt-4 pb-4">
+                    <img src="asset/page_images/avatar.png" class="img-fluid animated zoomIn">
+                </div>
+                <div class="new-item add-avatar">
+                    <button type="button" class="add-button form-control"><i class="fas fa-plus-circle"></i> Đổi Ảnh Đại Diện</button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="new-item">
+                    <div class="item-detail">
+                        <div class="owner-new">
+                            <h6><i class="fas fa-users"></i> <b>Họ Và Tên:</b>
+                                <div class="form-control-custom user-infor">{{user.name}}</div>
+                            </h6>
+                        </div>
+                        <div class="owner-new">
+                            <h6><i class="fas fa-birthday-cake"></i> <b>Ngày Sinh:</b>
+                                <div class="form-control-custom user-infor">{{user.birthday}}</div>
+                            </h6>
+                        </div>
+                        <div class="owner-new">
+                            <h6><i class="fas fa-transgender-alt"></i> <b>Giới Tính:</b>
+                                <div class="form-control-custom user-infor">{{user.gender}}</div>
+                            </h6>
+                        </div>
+                        <div class="owner-new">
+                            <h6><i class="fas fa-address-card"></i> <b>Địa Chỉ:</b>
+                                <div style="height: 100px" class="form-control-custom user-infor">{{user.address}}</div>
+                            </h6>
+                        </div>
+                        <div class="owner-new">
+                            <h6><i class="fas fa-phone-square"></i> <b>Số Điện Thoại:</b>
+                                <div class="form-control-custom user-infor">{{user.phone}}</div>
+                            </h6>
+                        </div>
+                        <div class="owner-new">
+                            <h6><i class="fas fa-envelope"></i> <b>Email:</b>
+                                <div class="form-control-custom user-infor">{{user.email}}</div>
+                            </h6>
+                        </div>
+                        <div class="owner-new">
+                            <h6><i class="fas fa-user-tie"></i> <b>Tôi Là Nhân Viên Môi Giới:</b>
+                                <div class="form-control-custom user-infor">{{user.company}}</div>
+                            </h6>
+                        </div>
+                        <div class="owner-new">
+                            <h6><i class="fas fa-map-marker-alt"></i> <b>Địa Chỉ Công Ty:</b>
+                                <div style="height: 100px" class="form-control-custom user-infor">{{user.addrCom}}</div>
+                            </h6>
+                        </div>
+                        <div class="detail-infor">
+                            <h6>
+                                <b>Thông Tin Thêm:</b> {{user.notes}}
+                            </h6>
+                        </div>
+                        {{#if user}}
+                        <div class="edit-area">
+                            <div class="custom-btn">
+                                <button type="button" class="add-button form-control"><a href="/users/update"><i style="color:black" class="fas fa-plus-circle"></i> Cập Nhật/Chỉnh Sửa Thông Tin Tài Khoản</a> </button>
+                            </div>
+                            <div class="custom-btn">
+                                <a href="javascript:void(0);" id="show-change-password"><button type="button" class="add-button form-control"><i style="color: black" class="fas fa-plus-circle"></i> Đổi Mật Khẩu</button></a>
+                            </div>
+                        </div>
+                        {{/if}}
+                        <div class="change-pasword">
+                            <form action="#" method="post">
+                                <div class="new-item">
+                                    <div class="item-detail">
+                                        <div class="textbox-custom">
+                                            <h6><i class="fas fa-key"></i> <b>Mật Khẩu Hiện Tại</b></h6>
+                                            <input type="password" class="form-control" name="old-password" placeholder="Nhập Mật Khẩu Hiện Tại">
+                                        </div>
+                                        <div class="textbox-custom">
+                                            <h6><i class="fas fa-key"></i> <b>Mật Khẩu Mới</b></h6>
+                                            <input type="password" class="form-control" name="new-password" placeholder="Nhập Mật Khẩu Mới">
+                                        </div>
+                                        <div class="textbox-custom">
+                                            <h6><i class="fas fa-key"></i> <b>Nhập Lại Mật Khẩu</b></h6>
+                                            <input type="password" class="form-control" name="cofirm-password" placeholder="Nhập Lại Mật Khẩu Mới">
+                                        </div>
+                                        <div class="custom-btn">
+                                            <button type="submit" class="add-button form-control subcribe-btn-animation">SUBMIT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{/if}}

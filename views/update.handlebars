@@ -1,0 +1,91 @@
+{{#if user}}
+<section class="container-fluid">
+    <div class="row pt-4">
+        <div class="col-12 links-hov" style="text-align: center">
+            <a href="" class="links">Trang Chủ</a>
+            <span>/</span>
+            <a class="links" href="">Thông Tin Người Dùng</a>
+            <span>/</span>
+            <a class="links" href="">Cập Nhật</a>
+        </div>
+    </div>
+    <div class="real-estate-project">
+        <h1 class="title animated fadeInDown">Cập Nhật Thông Tin</h1>
+        <hr class="animated fadeInRight" width="450px" color="red">
+    </div>
+    <div class="item-container-new">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="new-item pt-4 pb-4">
+                    <img src="asset/page_images/avatar.png" class="img-fluid animated zoomIn">
+                </div>
+                <div class="new-item add-avatar">
+                    <button type="button" class="add-button form-control"><i class="fas fa-plus-circle"></i> Đổi Ảnh Đại Diện</button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <form action="/users/getupdate" method="post">
+                    <div class="new-item">
+                        <div class="item-detail">
+                            <div class="textbox-custom">
+                                <h6><i class="fas fa-users"></i> <b>Username</b></h6>
+                                <input readonly type="text" value={{user.username}} class="form-control" name="username">
+                            </div>
+                            <div class="textbox-custom">
+                                <h6><i class="fas fa-users"></i> <b>Họ Và Tên:</b></h6>
+                                <input type="text"  value={{user.name}} class="form-control" name="name" placeholder="Nhập Họ Và Tên" id="tentui">
+                            </div>
+                            <div class="textbox-custom">
+                                <h6><i class="fas fa-birthday-cake"></i> <b>Ngày Sinh:</b></h6>
+                                <input type="date"  class="form-control" name="birthday" placeholder="Nhập Ngày Sinh">
+                            </div>
+                            <div class="textbox-custom">
+                                <h6><i class="fas fa-transgender-alt"></i> <b>Giới Tính:</b></h6>
+                                <select class="form-control" id="" name="gender">
+                                    <option value="unknow">Giới Tính</option>
+                                    <option value="male">Nam</option>
+                                    <option value="female">Nữ</option>
+                                    <option value="unknow">Giới Tính Khác</option>
+                                </select>
+                            </div>
+                            <div class="textbox-custom">
+                                <h6><i class="fas fa-address-card"></i> <b>Địa Chỉ:</b></h6>
+                                <input type="text"  class="form-control" name="address" placeholder="Nhập Địa Chỉ">
+                            </div>
+                            <div class="textbox-custom">
+                                <h6><i class="fas fa-phone-square"></i> <b>Số Điện Thoại:</b></h6>
+                                <input type="number" class="form-control" name="phone" placeholder="Nhập Sô Điện Thoại">
+                            </div>
+                            <div class="textbox-custom">
+                                <h6><i class="fas fa-envelope"></i> <b>Email:</b></h6>
+                                <input type="email"  value={{user.email}} class="form-control" name="email" placeholder="Nhập Email">
+                            </div>
+                            <div class="textbox-custom">
+                                <h6><i class="fas fa-user-tie"></i> <b>Tôi Là Nhân Viên Môi Giới:</b></h6>
+                                <input type="text"  class="form-control" name="estate-agent" placeholder="Nhập Tên Công Ty" name="company">
+                            </div>
+                            <div class="textbox-custom">
+                                <h6><i class="fas fa-map-marker-alt"></i> <b>Địa Chỉ Công Ty:</b></h6>
+                                <input type="text"  class="form-control" name="addrCom" placeholder="Nhập Địa Chỉ Công Ty">
+                            </div>
+                            <div class="detail-infor">
+                                <h6>
+                                    <input type="text"  class="form-control" name="notes" placeholder="Nhập Thông Tin Thêm">
+                                </h6>
+                            </div>
+                            <div class="edit-area">
+                                <div class="custom-btn">
+                                    <button class="add-button form-control subcribe-btn-animation">CẬP NHẬT</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{{/if}}
