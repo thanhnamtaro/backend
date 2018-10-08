@@ -213,7 +213,7 @@ router.post('/upavt', function (req, res) {
 			//res.end('Upload Thanh cong!');
 		});
 		var newUser = new User({
-			username: username,
+			username: 'thahlee',
 			avt: luupath
 		});
 		User.updateavt(newUser,function (err, user) {
