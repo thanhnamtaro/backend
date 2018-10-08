@@ -11,6 +11,7 @@ var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 
+
 mongoose.connect('mongodb://localhost/taikhoandbs');
 var db = mongoose.connection;
 
@@ -32,7 +33,7 @@ app.use(cookieParser());
 
 // Set Static Folder
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(express.static(path.join(__dirname, 'avataruser')));
 // Express Session
 app.use(session({
     secret: 'secret',
@@ -85,3 +86,4 @@ app.set('port', (process.env.PORT || 1616));
 app.listen(app.get('port'), function(){
 	console.log('Server started on port '+app.get('port'));
 });
+

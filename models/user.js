@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
 
+
 // User Schema
 var UserSchema = mongoose.Schema({
 	username: {
@@ -17,7 +18,7 @@ var UserSchema = mongoose.Schema({
 		type: String
 	},
 	birthday:{
-		type: Date
+		type: String
 	},
 	phone:{
 		type: String
@@ -35,6 +36,9 @@ var UserSchema = mongoose.Schema({
 		type: String
 	},
 	notes: {
+		type: String
+	},
+	avt : {
 		type: String
 	}
 });
@@ -67,7 +71,14 @@ User.findOne({username: newUser.username}, function (err, userObj) {
     
       //Some demo manipulation
 	  userObj.name = newUser.name;
-	  userObj.email = newUser.email;
+		userObj.email = newUser.email;
+		userObj.birthday = newUser.birthday;
+		userObj.phone= newUser.phone;
+		userObj.notes = newUser.notes;
+		userObj.company = newUser.company;
+		userObj.addrCom = newUser.addrCom;
+		userObj.address = newUser.address;
+		userObj.gender = newUser.gender;
 
       //Lets save it
       userObj.save(function (err) {
@@ -83,6 +94,39 @@ User.findOne({username: newUser.username}, function (err, userObj) {
   }
 });
 }
+
+module.exports.updateavt = function(newUser, callback){
+	//var query = {username: username};
+	//User.findOne(query, callback);
+//var thayten = newUser.username;
+//Lets try to Find a user
+//var User1 = mongoose.model('User1', {username: String, name: String, phone: String, address: String});
+User.findOne({username: newUser.username}, function (err, userObj) {
+  if (err) {
+    console.log(err);
+  } else if (userObj) {
+    console.log('Found:', userObj);
+
+    //For demo purposes lets update the user on condition.
+    
+      //Some demo manipulation
+	  userObj.avt = newUser.avt;
+
+      //Lets save it
+      userObj.save(function (err) {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log('Updated', userObj);
+        }
+      });
+    
+  } else {
+    console.log('User not found!');
+  }
+});
+}
+
 
 
 module.exports.getUserByUsername = function(username, callback){

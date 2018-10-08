@@ -16,11 +16,27 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="new-item pt-4 pb-4">
-                    <img src="asset/page_images/avatar.png" class="img-fluid animated zoomIn">
+                    <img src={{user.avt}} class="img-fluid animated zoomIn">
                 </div>
                 <div class="new-item add-avatar">
                     <button type="button" class="add-button form-control"><i class="fas fa-plus-circle"></i> Đổi Ảnh Đại Diện</button>
                 </div>
+                <div class="panel-body">
+                        <form action="/users/upavt" method="post" enctype="multipart/form-data">
+                            <legend>Upload file</legend>
+                            <div>
+                                <div class="textbox-custom">
+                                <h6><i class="fas fa-users"></i> <b>Username</b></h6>
+                                <input readonly type="text" value={{user.username}} class="form-control" name="username">
+                                </div>
+                                <div>
+                                <label for="">File</label>
+                                <input type="file" class="form-control" name="files">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
             </div>
             <div class="col-lg-6">
                 <div class="new-item">
